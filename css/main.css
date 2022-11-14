@@ -1,0 +1,60 @@
+:root{
+    /*Font Families*/
+    --monospace: 'Courier New', Courier, monospace;
+
+    /*Font Sizes*/
+    --normal-font-size: 16px;
+    --nav-font-size: 32px;
+    /*Colors*/
+    --nav-text-color: #03cdd1;
+    --nav-hover-text-color: #b0edee;
+    --background: rgb(28, 28, 28);
+
+    /*Transition Levels*/
+    --normal-t: 200ms ease-in-out;
+
+    /*Metric Values*/
+        /*Navigator*/
+        --nav-height: 10vh;
+        --nav-padding: 1vw;
+}
+
+html{
+    font-family: var(--monospace);
+}
+
+body{
+    background-color: var(--background);
+}
+
+nav{
+    height: var(--nav-height);
+    font-size: var(--nav-font-size);
+}
+
+a {
+    transition: var(--normal-t);
+    text-decoration: none;
+    color: var(--nav-text-color);
+}
+
+a:hover{
+    color: var(--nav-hover-text-color);
+}
+
+nav li{
+    display: inline-block;
+    text-align: right;
+}
+
+li {
+    padding-right: var(--nav-padding);
+    margin: 10px 0 0 0;
+    float: right;
+    text-align: left;
+}
+
+li:first-child {
+    float: left; 
+    padding-left: var(--nav-padding);
+}
